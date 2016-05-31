@@ -16,7 +16,7 @@ var currentPerformanceCounterCategory = new System.Diagnostics.
 
    To have a line break without a paragraph, you will need to use two trailing spaces.
    For example:
-```csharp
+   ```csharp
 var currentPerformanceCounterCategory = new System.Diagnostics.
     PerformanceCounterCategory();
 ```
@@ -29,14 +29,14 @@ var currentPerformanceCounterCategory = new System.Diagnostics.
 - *Add at least one blank line between method definitions and property definitions.*
 
    ```csharp
-   public int number1, number2;
-   
-   public string text1, text2;
-   ```
+public int number1, number2;
+
+ public string text1, text2;
+```
 - *Use parentheses to make clauses in an expression apparent, as shown in the following code.*
 
    For example:
-```csharp
+   ```csharp
 if ((booleanValueOne) && (!booleanValueTwo))
 {
     // Take appropriate action.
