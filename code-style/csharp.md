@@ -14,31 +14,39 @@ var currentPerformanceCounterCategory = new System.Diagnostics.
 
 - *You should use spaces for indenting. Four spaces for one tab.*
 
-   To have a line break without a paragraph, you will need to use two trailing spaces.
-   For example:
-   ```csharp
-var currentPerformanceCounterCategory = new System.Diagnostics.
-    PerformanceCounterCategory();
-```
+  To have a line break without a paragraph, you will need to use four trailing spaces.
+  For example:
+  ```csharp
+  var currentPerformanceCounterCategory = new System.Diagnostics.
+      PerformanceCounterCategory();
+  ```
 - *Write only one statement per line.*
 
-   not like:
-   ```csharp
-   var i = 0; var booleanValueOne = true;
-   ```
+  Not like:
+  ```csharp
+  var i = 0; var booleanValueOne = true;
+  ```
 - *Add at least one blank line between method definitions and property definitions.*
 
-   ```csharp
-public int number1, number2;
+  ```csharp
+  public int number1, number2;
 
- public string text1, text2;
-```
+  public string text1, text2;
+
+  public int GetNumber() {
+      return number1 + number2;  
+  }
+
+  public string GetString() {
+      return text1 + text2;
+  }
+  ```
 - *Use parentheses to make clauses in an expression apparent, as shown in the following code.*
 
   For example:
   ```csharp
   if ((booleanValueOne) && (!booleanValueTwo))
   {
-    // Take appropriate action.
+      // Take appropriate action.
   }
   ```
