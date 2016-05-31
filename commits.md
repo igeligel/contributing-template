@@ -11,14 +11,17 @@ The scheme is:
 | Title            | ```<type>(<scope>)``` |
 | Description      | ```<subject>```       |
 
-You should always use this list of types for commits:
-- **feat**: A new feature.
-- **fix**: A bug fix.
-- **docs**: Documentation only changes.
-- **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc).
-- **refactor**: A code change that neither fixes a bug or adds a feature.
-- **test**: Adding missing tests.
-- **chore**: Changes to the build process or auxiliary tools and libraries such as documentation generation.
+You should always use these of types for commits:
+
+| Type         | Description                                                                                             |
+| -------------|---------------------------------------------------------------------------------------------------------|
+| **feat**     | A new feature.                                                                                          |
+| **fix**      | A bug fix.                                                                                              |
+| **docs**     | Documentation only changes.                                                                             |
+| **style**    | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc). |
+| **refactor** | A code change that neither fixes a bug or adds a feature.                                               |
+| **test**     | Adding missing tests.                                                                                   |
+| **chore**    | Changes to the build process or auxiliary tools and libraries such as documentation generation.         |
 
 The scope is specifying the place of the commit.
 
