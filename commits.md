@@ -6,6 +6,7 @@ Each commit will be created by three parts:
 
 The scheme is:
 
+| Field of commit  | Is looking            |
 | -------------    |-----------------------|
 | Title            | ```<type>(<scope>)``` |
 | Description      | ```<subject>```       |
