@@ -35,10 +35,10 @@ public int number1, number2;
 ```
 - *Use parentheses to make clauses in an expression apparent, as shown in the following code.*
 
-   For example:
-   ```csharp
-if ((booleanValueOne) && (!booleanValueTwo))
-{
+  For example:
+  ```csharp
+  if ((booleanValueOne) && (!booleanValueTwo))
+  {
     // Take appropriate action.
-}
-```
+  }
+  ```
