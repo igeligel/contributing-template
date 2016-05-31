@@ -15,3 +15,6 @@ There are some reasons, for example:
 - Java
 - Javascript
 - HTML
+
+# License
+[MIT](LICENSE)
