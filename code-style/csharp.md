@@ -50,3 +50,17 @@ var currentPerformanceCounterCategory = new System.Diagnostics.
       // Take appropriate action.
   }
   ```
+
+  # Commenting Conventions
+  - *You should always start a comment on a seperate line.*
+    Not like:
+
+    ```csharp
+    var test = 0; // variable test is used for function x.
+    ```
+
+    Better use:
+    ```csharp
+    // Variable Test is used for function x.
+    var test = 0;
+    ```
