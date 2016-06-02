@@ -51,19 +51,19 @@ var currentPerformanceCounterCategory = new System.Diagnostics.
   }
   ```
 
-  # Commenting Conventions
-  - *You should always start a comment on a seperate line.*
-    Not like:
+# Commenting Conventions
+- *You should always start a comment on a seperate line.*
+  Not like:
 
-    ```csharp
-    var test = 0; // variable test is used for function x.
-    ```
+  ```csharp
+  var test = 0; // variable test is used for function x.
+  ```
 
-    Better use:
-    ```csharp
-    // Variable Test is used for function x.
-    var test = 0;
-    ```
-  - *Begin the text with an uppercase letter.* For reference see last code bracket.
-  - *End comment with a period.* For reference see last code bracket.
-  - *Insert space after the delimiter (//).* For reference see last code bracket.
+  Better use:
+  ```csharp
+  // Variable Test is used for function x.
+  var test = 0;
+  ```
+- *Begin the text with an uppercase letter.* For reference see last code bracket.
+- *End comment with a period.* For reference see last code bracket.
+- *Insert space after the delimiter (//).* For reference see last code bracket.
