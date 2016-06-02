@@ -64,3 +64,6 @@ var currentPerformanceCounterCategory = new System.Diagnostics.
     // Variable Test is used for function x.
     var test = 0;
     ```
+  - *Begin the text with an uppercase letter.* For reference see last code bracket.
+  - *End comment with a period.* For reference see last code bracket.
+  - *Insert space after the delimiter (//).* For reference see last code bracket.
