@@ -67,3 +67,21 @@ var currentPerformanceCounterCategory = new System.Diagnostics.
 - *Begin the text with an uppercase letter.* For reference see last code bracket.
 - *End comment with a period.* For reference see last code bracket.
 - *Insert space after the delimiter (//).* For reference see last code bracket.
+
+# Language Guidelines
+
+## String Data type
+
+- *Use + operator for concatenate short strings*
+  ```csharp
+  var personName = "John" + " " + "Doe";
+  ```
+
+- *Use StringBuilder to operate with large strings.*
+  ```csharp
+  var phrase = "testtesttest";
+  var manyPhrases = new StringBuilder();
+  for (var i = 0; i < 1337; i++) {
+      manyPhrases.Append(phrase);  
+  }
+  ```
