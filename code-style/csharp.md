@@ -85,3 +85,38 @@ var currentPerformanceCounterCategory = new System.Diagnostics.
       manyPhrases.Append(phrase);  
   }
   ```
+
+## Implicitly Typed Local Variables
+
+- *When type of a variable is clear from the context use var-keyword.*
+  ```csharp
+  var personName = "John Doe";
+  var age = 27;
+  var userInput = Convert.ToInt32(Console.ReadLine());
+  ```
+
+- *Do not use var-keyword if the type of the variable is not clear by context.*
+  ```csharp
+  int currentState = getCurrentState();
+  ```
+
+- *Do not rely on variable name to get the type of a variable.*
+  ```csharp
+  var inputInt = Console.ReadLine();
+  Console.WriteLine(inputInt);
+  ```
+- *Avoid using var instead of dynamic*
+
+- *Use implicit type of variables for for- and foreach-loops*
+  ```csharp
+  for (var i = 0; i < 10; i++) {
+      Console.WriteLine(i);
+  }
+  ```
+
+  ```csharp
+  numbers = new List<int> { 5, 10, 23 };
+  foreach (var number in numbers) {
+      Console.WriteLine(number);
+  }
+  ```
