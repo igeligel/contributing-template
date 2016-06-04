@@ -120,3 +120,27 @@ var currentPerformanceCounterCategory = new System.Diagnostics.
       Console.WriteLine(number);
   }
   ```
+
+# Unsigned Data Type
+You should avoid using the unsigned data type to secure compability with other libraries.
+
+# Arrays
+Be sure if to declare a data type when you instantiate an array implicitly.
+```csharp
+string[] vowels = { "a", "e", "i", "o", "u" };
+```
+
+If you use explicit instantiation, you can use the var-keyword.
+```csharp
+var vowels = new string[] { "a", "e", "i", "o", "u" };
+```
+
+If you want to give your array a size, you need to initialize each element one by one.
+```csharp
+var vowels = new string[5];
+vowels[0] = "a";
+vowels[0] = "e";
+vowels[0] = "i";
+vowels[0] = "o";
+vowels[0] = "u";
+```
