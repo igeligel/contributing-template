@@ -144,3 +144,27 @@ vowels[2] = "i";
 vowels[3] = "o";
 vowels[4] = "u";
 ```
+
+# Delegates
+*Use concise syntax to create an instance of delegate type.*
+First define the type:
+```csharp
+public delegate void Del(string message);
+```
+
+Then define a method with the matching signature.
+```csharp
+public void DelMethod(string str) {
+    Console.WriteLine("DelMethod was called with argument: " + str);
+}
+```
+
+It is preferred to create an instance by using the condensed syntax.
+```csharp
+Del  exampleDel2 = DelMethod;
+```
+
+Here is the full syntax:
+```csharp
+Del exampleDel1 = new Del(DelMethod);
+```
