@@ -139,8 +139,8 @@ If you want to give your array a size, you need to initialize each element one b
 ```csharp
 var vowels = new string[5];
 vowels[0] = "a";
-vowels[0] = "e";
-vowels[0] = "i";
-vowels[0] = "o";
-vowels[0] = "u";
+vowels[1] = "e";
+vowels[2] = "i";
+vowels[3] = "o";
+vowels[4] = "u";
 ```
