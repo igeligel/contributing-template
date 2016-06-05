@@ -187,3 +187,28 @@ static string GetValueFromArray(string[] array, int index)
     }
 }
 ```
+
+If a try-catch-finally block will use the dispose method in the finally block, you should use a using statement instead.
+
+```csharp
+Font font1 = new Font("Arial", 10.0f);
+try
+{
+    byte charset = font1.GdiCharSet;
+}
+finally
+{
+    if (font1 != null)
+    {
+        ((IDisposable)font1).Dispose();
+    }
+}
+```
+
+Same should be done with a using-statement:
+```csharp
+using (Font font2 = new Font("Arial", 10.0f))
+{
+    byte charset = font2.GdoCharSet;
+}
+```
