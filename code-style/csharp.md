@@ -168,3 +168,22 @@ Here is the full syntax:
 ```csharp
 Del exampleDel1 = new Del(DelMethod);
 ```
+
+# try-catch and using Statements in Exception Handling
+
+*Use a try-catch statement for most exception handling.*
+
+```csharp
+static string GetValueFromArray(string[] array, int index)
+{
+    try
+    {
+        return array[index];
+    }
+    catch (System.IndexOutOfRangeException ex)
+    {
+        Console.WriteLine("Index is out of range: {0}", index);
+        throw;
+    }
+}
+```
