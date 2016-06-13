@@ -11,7 +11,6 @@ var currentPerformanceCounterCategory = new System.Diagnostics.
 ```
 
 # Layout Conventions
-
 - *You should use spaces for indenting. Four spaces for one tab.*
 
   To have a line break without a paragraph, you will need to use four trailing spaces.
@@ -71,7 +70,6 @@ var currentPerformanceCounterCategory = new System.Diagnostics.
 # Language Guidelines
 
 ## String Data type
-
 - *Use + operator for concatenate short strings*
   ```csharp
   var personName = "John" + " " + "Doe";
@@ -87,7 +85,6 @@ var currentPerformanceCounterCategory = new System.Diagnostics.
   ```
 
 ## Implicitly Typed Local Variables
-
 - *When type of a variable is clear from the context use var-keyword.*
   ```csharp
   var personName = "John Doe";
@@ -170,7 +167,6 @@ Del exampleDel1 = new Del(DelMethod);
 ```
 
 # try-catch and using Statements in Exception Handling
-
 *Use a try-catch statement for most exception handling.*
 
 ```csharp
@@ -214,7 +210,6 @@ using (Font font2 = new Font("Arial", 10.0f))
 ```
 
 # && and || Operators
-
 Use ```&&``` and ```||``` instead of ```&``` and ```|``` to avoid performance problems and exceptions.
 These keywords should be used when doing comparisons.
 
