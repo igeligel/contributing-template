@@ -212,3 +212,18 @@ using (Font font2 = new Font("Arial", 10.0f))
     byte charset = font2.GdoCharSet;
 }
 ```
+
+# && and || Operators
+
+Use ```&&``` and ```||``` instead of ```&``` and ```|``` to avoid performance problems and exceptions.
+These keywords should be used when doing comparisons.
+
+```csharp
+var isOnlineSince = 16;
+var isReadySince = 10;
+
+if ((isOnlineSince >= 15) && (isReadySince >= 5)) 
+{
+    Console.WriteLine("The person is ready to work");
+}
+```
