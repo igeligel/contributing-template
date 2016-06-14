@@ -222,3 +222,29 @@ if ((isOnlineSince >= 15) && (isReadySince >= 5))
     Console.WriteLine("The person is ready to work");
 }
 ```
+
+# New Operator
+Use concise form of object instantiation, with implicit typing.
+```csharp
+var instance1 = new ExampleClass();
+// Equivalent:
+ExampleClass instance2 = new ExampleClass();
+```
+
+You should always use object initializer to simplify the structure of your program:
+```csharp
+var instance3 = new ExampleClass 
+{
+    Name = "Desktop",
+    Id = 37414,
+    Location = "Redmond",
+    Age = 2.3
+};
+
+// Instead of:
+var instance4 = new ExampleClass();
+instance4.Name = "Desktop";
+instance4.Id = 37414;
+instance4.Location = "Redmond";
+instance4.Age = 2.3;
+```
