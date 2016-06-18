@@ -217,7 +217,7 @@ These keywords should be used when doing comparisons.
 var isOnlineSince = 16;
 var isReadySince = 10;
 
-if ((isOnlineSince >= 15) && (isReadySince >= 5)) 
+if ((isOnlineSince >= 15) && (isReadySince >= 5))
 {
     Console.WriteLine("The person is ready to work");
 }
@@ -233,7 +233,7 @@ ExampleClass instance2 = new ExampleClass();
 
 You should always use object initializer to simplify the structure of your program:
 ```csharp
-var instance3 = new ExampleClass 
+var instance3 = new ExampleClass
 {
     Name = "Desktop",
     Id = 37414,
@@ -247,4 +247,32 @@ instance4.Name = "Desktop";
 instance4.Id = 37414;
 instance4.Location = "Redmond";
 instance4.Age = 2.3;
+```
+
+# Event Handling
+If you need to add an event handler which is used once and not later, you should use lambda expressions.
+
+Example for lambda expression:
+```csharp
+public Form2()
+{
+    this.Click += (s, e) =>
+        {
+            MessageBox.Show(
+              ((MouseEventArgs)e).Location.ToString());
+        }
+}
+```
+
+Example for traditional event handling.
+```csharp
+public Form1()
+{
+    this.Click += new EventHandler(Form1_Click);
+}
+
+void Form1_Click(object sender, EventArgs e)
+{
+    MessageBox.Show(((MouseEventArgs)e).Location.ToString());
+}
 ```
