@@ -276,3 +276,11 @@ void Form1_Click(object sender, EventArgs e)
     MessageBox.Show(((MouseEventArgs)e).Location.ToString());
 }
 ```
+
+# Static members
+Call static members like this:
+```csharp
+var staticMember = ClassName.StaticMember;
+```
+
+Do not derive static members with the same name.
